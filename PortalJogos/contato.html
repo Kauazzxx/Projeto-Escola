@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - GamePortal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script type="importmap">
+    {
+      "imports": {
+        "gsap": "https://cdn.jsdelivr.net/npm/gsap@3.12.2/index.js"
+      }
+    }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <svg class="logo-svg" viewBox="0 0 200 50" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20,10 C30,5 40,10 35,15 C45,20 30,25 25,20 C15,25 10,15 20,10 Z" fill="url(#logo-gradient)" />
+                    <text x="60" y="30" fill="#fff" font-family="Arial, sans-serif" font-weight="bold" font-size="20">GamePortal</text>
+                    <defs>
+                        <linearGradient id="logo-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#ff7b00" />
+                            <stop offset="100%" stop-color="#ff00d4" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="#" class="active">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="hero contact-hero">
+                <h1>Entre em Contato</h1>
+                <p>Estamos sempre prontos para ouvir você</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-form">
+                    <h2>Envie sua Mensagem</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Nome Completo</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Assunto</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Selecione um assunto</option>
+                                <option value="support">Suporte</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="partnership">Parceria</option>
+                                <option value="other">Outros</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Enviar Mensagem</button>
+                    </form>
+                </div>
+
+                <div class="contact-info">
+                    <h2>Informações de Contato</h2>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M32,10 C20.4,10 10,20.4 10,32 C10,43.6 20.4,54 32,54 C43.6,54 54,43.6 54,32 C54,20.4 43.6,10 32,10 Z" fill="rgba(255, 123, 0, 0.3)" />
+                                <path d="M32,20 L32,32 L40,40" fill="none" stroke="#ff7b00" stroke-width="3" />
+                            </svg>
+                            <div>
+                                <h3>Horário de Atendimento</h3>
+                                <p>Segunda a Sexta: 9h - 18h</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M32,10 C20.4,10 10,20.4 10,32 C10,43.6 20.4,54 32,54 C43.6,54 54,43.6 54,32 C54,20.4 43.6,10 32,10 Z" fill="rgba(0, 170, 255, 0.3)" />
+                                <path d="M22,22 L42,22 L42,42 L22,42 Z" fill="none" stroke="#00aaff" stroke-width="3" />
+                                <path d="M22,22 L32,32 L42,22" fill="none" stroke="#00aaff" stroke-width="3" />
+                            </svg>
+                            <div>
+                                <h3>E-mail</h3>
+                                <p>contato@gameportal.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M32,10 C20.4,10 10,20.4 10,32 C10,43.6 20.4,54 32,54 C43.6,54 54,43.6 54,32 C54,20.4 43.6,10 32,10 Z" fill="rgba(255, 0, 212, 0.3)" />
+                                <path d="M22,22 L42,22 L42,42 L22,42 Z" fill="none" stroke="#ff00d4" stroke-width="3" />
+                                <circle cx="32" cy="32" r="5" fill="#ff00d4" />
+                            </svg>
+                            <div>
+                                <h3>Telefone</h3>
+                                <p>+55 (11) 9999-8888</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                </div>
+                <p>&copy; 2025 GamePortal. Todos os direitos reservados.</p>
+            </div>
+        </footer>
+    </div>
+
+    <div class="particles"></div>
+    <script type="module" src="script.js"></script>
+</body>
+</html>

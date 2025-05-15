@@ -1,0 +1,153 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Jogos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script type="importmap">
+    {
+      "imports": {
+        "gsap": "https://cdn.jsdelivr.net/npm/gsap@3.12.2/index.js"
+      }
+    }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <svg class="logo-svg" viewBox="0 0 200 50" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20,10 C30,5 40,10 35,15 C45,20 30,25 25,20 C15,25 10,15 20,10 Z" fill="url(#logo-gradient)" />
+                    <text x="60" y="30" fill="#fff" font-family="Arial, sans-serif" font-weight="bold" font-size="20">GamePortal</text>
+                    <defs>
+                        <linearGradient id="logo-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#ff7b00" />
+                            <stop offset="100%" stop-color="#ff00d4" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="hero">
+                <h1>Descubra Novos Mundos</h1>
+                <p>Entre no universo dos jogos e viva experiências únicas</p>
+            </div>
+
+            <div class="games-container">
+                <div class="game-card rpg" id="rpg-card">
+                    <div class="card-front">
+                        <div class="game-icon">
+                            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M32,5 L10,20 L10,44 L32,59 L54,44 L54,20 Z" fill="none" stroke="#ff7b00" stroke-width="2" />
+                                <path d="M32,5 L32,59" fill="none" stroke="#ff7b00" stroke-width="2" />
+                                <path d="M10,20 L54,20" fill="none" stroke="#ff7b00" stroke-width="2" />
+                                <path d="M10,44 L54,44" fill="none" stroke="#ff7b00" stroke-width="2" />
+                                <circle cx="32" cy="32" r="10" fill="#ff7b00" opacity="0.5" />
+                            </svg>
+                        </div>
+                        <h2>RPG</h2>
+                        <p>Embarque em uma jornada épica repleta de magia e aventura</p>
+                    </div>
+                    <div class="card-back">
+                        <h3>Aventura Mística</h3>
+                        <p>Um mundo repleto de criaturas mágicas, artefatos antigos e heróis lendários aguarda por você!</p>
+                        <button class="play-btn">Jogar Agora</button>
+                    </div>
+                </div>
+
+                <div class="game-card puzzle" id="puzzle-card">
+                    <div class="card-front">
+                        <div class="game-icon">
+                            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="10" y="10" width="20" height="20" fill="#00aaff" opacity="0.7" />
+                                <rect x="34" y="10" width="20" height="20" fill="#00aaff" opacity="0.5" />
+                                <rect x="10" y="34" width="20" height="20" fill="#00aaff" opacity="0.5" />
+                                <rect x="34" y="34" width="20" height="20" fill="#00aaff" opacity="0.7" />
+                                <path d="M30,10 L30,54" fill="none" stroke="#00aaff" stroke-width="2" />
+                                <path d="M10,30 L54,30" fill="none" stroke="#00aaff" stroke-width="2" />
+                            </svg>
+                        </div>
+                        <h2>Puzzle</h2>
+                        <p>Desafie sua mente com quebra-cabeças intrigantes</p>
+                    </div>
+                    <div class="card-back">
+                        <h3>Enigmas Infinitos</h3>
+                        <p>Centenas de quebra-cabeças para desafiar seu raciocínio lógico e criatividade!</p>
+                        <button class="play-btn">Jogar Agora</button>
+                    </div>
+                </div>
+
+                <div class="game-card arcade" id="arcade-card">
+                    <div class="card-front">
+                        <div class="game-icon">
+                            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="10" y="15" width="44" height="34" rx="5" fill="#ff00d4" opacity="0.3" />
+                                <rect x="18" y="23" width="28" height="18" rx="2" fill="#ff00d4" opacity="0.5" />
+                                <circle cx="23" cy="50" r="3" fill="#ff00d4" />
+                                <circle cx="41" cy="50" r="3" fill="#ff00d4" />
+                                <circle cx="18" cy="35" r="2" fill="#ff00d4" />
+                                <circle cx="46" cy="35" r="2" fill="#ff00d4" />
+                            </svg>
+                        </div>
+                        <h2>Arcade</h2>
+                        <p>Reviva a nostalgia dos clássicos jogos de arcade</p>
+                    </div>
+                    <div class="card-back">
+                        <h3>Clássicos Renovados</h3>
+                        <p>Os melhores jogos de arcade da história com um toque moderno e viciante!</p>
+                        <button class="play-btn">Jogar Agora</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                </div>
+                <p>&copy; 2025 GamePortal. Todos os direitos reservados.</p>
+            </div>
+        </footer>
+    </div>
+
+    <div class="particles"></div>
+    <div class="modal-overlay" id="game-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-games">
+                <div class="modal-game-option" data-game="rpg">
+                    <h3>RPG: Aventura Mística</h3>
+                    <p>Embarque em uma jornada épica através de mundos fantásticos</p>
+                    <button class="start-game">Começar Aventura</button>
+                </div>
+                <div class="modal-game-option" data-game="puzzle">
+                    <h3>Puzzle: Enigmas Infinitos</h3>
+                    <p>Desafie sua mente com quebra-cabeças intrigantes</p>
+                    <button class="start-game">Iniciar Desafio</button>
+                </div>
+                <div class="modal-game-option" data-game="arcade">
+                    <h3>Arcade: Clássicos Renovados</h3>
+                    <p>Reviva os clássicos jogos de arcade com um toque moderno</p>
+                    <button class="start-game">Jogar Agora</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+</html>

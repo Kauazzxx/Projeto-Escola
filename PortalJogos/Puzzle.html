@@ -1,0 +1,37 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Tetris Colorido</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Tetris</h1>
+        <div id="game-area">
+            <div id="tetris-board"></div>
+            <div id="side-panel">
+                <div id="next-piece-container">
+                    <h3>Próxima peça</h3>
+                    <div id="next-piece"></div>
+                </div>
+                <div id="score-container">
+                    <p id="score">Pontuação: 0</p>
+                    <p id="lines">Linhas: 0</p>
+                    <p id="level">Nível: 1</p>
+                </div>
+                <div id="controls-info">
+                    <h3>Controles</h3>
+                    <p>← → : Mover</p>
+                    <p>↑ : Rotacionar</p>
+                    <p>↓ : Descer</p>
+                    <p>Espaço : Queda rápida</p>
+                </div>
+                <button id="start-btn">Iniciar jogo</button>
+                <button id="pause-btn">Pausar</button>
+                <button id="back-btn">Voltar</button>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="game.js"></script>
+</body>
+</html>
